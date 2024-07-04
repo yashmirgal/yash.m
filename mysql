@@ -3,5 +3,5 @@ select c.customername,max(t.purchaseamount)
 as max_spent from customer t
 join customer c on t.customerid =c.customerid
 group by c.customername
-
+group by c_id.customerid
 
